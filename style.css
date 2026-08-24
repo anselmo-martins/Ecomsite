@@ -292,3 +292,68 @@ background-color:#fff2e5;
 #product1{
     text-align: center;  
 } 
+
+#sm-banner .banner-box{
+    background-image: url("resources/images/B2.png");
+    height: 60vh;
+    min-width: 580px;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#sm-banner2 .banner-box2{
+    background-image: url("resources/images/electronicBanner.png");
+    height: 60vh;
+    min-width: 580px;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#sm-banner2 .banner-box2 h2{
+    color: #fff;
+}
+
+#sm-banner2 .banner-box2 h4{
+    color: #fff;
+}
+
+#sm-banner2 .banner-box2 button{
+    background: linear-gradient(135deg, #00a2a2, #007c7c);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 18px rgba(0, 162, 162, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#sm-banner .banner-box button{
+    background: linear-gradient(135deg, #00a2a2, #007c7c);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 18px rgba(0, 162, 162, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
