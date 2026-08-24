@@ -202,15 +202,15 @@ background-color:#fff2e5;
 }
 
 #product1 .p-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
     padding-top: 20px;
-    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 #product1 .pro {
-    width: 23%;
-    min-width: 250px;
+    width: 100%;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     border-radius: 20px;
@@ -228,7 +228,10 @@ background-color:#fff2e5;
 
 #product1 .pro img {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
     border-radius: 20px;
+    display: block;
 }
 
 #product1 .pro .des {
@@ -286,3 +289,6 @@ background-color:#fff2e5;
     font-size: 16px;
 }
 
+#product1{
+    text-align: center;  
+} 
