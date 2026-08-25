@@ -9,13 +9,13 @@
 h1 {
     font-size: 50px;
     line-height: 64px;
-color: #222;
+    color: #222;
 }
 
 h2 {
-font-size: 46px;
-line-height: 54px;
-color: #222;
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
 }
 
 h4{
@@ -314,8 +314,9 @@ background-color:#fff2e5;
 #sm-banner .banner-box{
     background-image: url("resources/images/B2.png");
     height: 60vh;
-    min-width: 580px;
     height: 60vh;
+    width: 100%;
+    min-width: 0;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -323,13 +324,15 @@ background-color:#fff2e5;
     text-align: center;
     align-items: center;
     justify-content: center;
+    color: aliceblue;
 }
 
 #sm-banner2 .banner-box2{
     background-image: url("resources/images/electronicBanner.png");
     height: 60vh;
-    min-width: 580px;
     height: 60vh;
+    width: 100%;
+    min-width: 0;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -346,6 +349,14 @@ background-color:#fff2e5;
 
 #sm-banner2 .banner-box2 h4{
     color: #fff;
+}
+
+#sm-banner .banner-box h2{
+    color: #f1f1f1;
+}
+
+#sm-banner .banner-box h4{
+    color: #f1f1f1;
 }
 
 #sm-banner2 .banner-box2 button{
@@ -466,6 +477,140 @@ background-color:#fff2e5;
     font-size: 14px;
 }
 
+#page-header{
+    background-image: url("resources/images/pageBanner.png");
+    height: 60vh;
+    height: 60vh;
+    width: 100%;
+    min-width: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-header h2{
+
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#page-header p{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#page-header p{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #007c7c;
+    padding: 15px 20px;
+    margin: 0 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a li{
+font: 1em sans-serif;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display:block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+#prodetails .single-pro-details input{
+    display: block;
+    width: 60px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 14px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+    border-color: #00a2a2;
+    box-shadow: 0 0 5px rgba(0, 162, 162, 0.5);
+}
+
+#prodetails .single-pro-details button{
+    display: block;
+    background: linear-gradient(135deg, #00a2a2, #007c7c);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 18px rgba(0, 162, 162, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#prodetails .single-pro-details button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px rgba(0, 162, 162, 0.3);
+}
+
+#prodetails .single-pro-details span{
+    display: block;
+    line-height: 25px;
+    margin: 10px 0 14px;
+}
+
 @media (max-width: 799px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -525,9 +670,50 @@ background-color:#fff2e5;
 
     #sm-banner .banner-box,
     #sm-banner2 .banner-box2 {
-        min-width: 0;
         width: 100%;
         height: 45vh;
+    }
+
+    #page-header {
+        width: 100%;
+        min-width: 0;
+        height: 42vh;
+    }
+
+    #page-header h2 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    #page-header p {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    #pagination a {
+        padding: 12px 16px;
+        margin: 0 4px 8px;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    #prodetails {
+        gap: 28px;
+        align-items: flex-start;
+    }
+
+    #prodetails .single-pro-image {
+        width: 45%;
+        margin-right: 0;
+    }
+
+    #prodetails .single-pro-details {
+        width: 55%;
+        padding-top: 10px;
+    }
+
+    #prodetails .single-pro-details h2 {
+        font-size: 22px;
     }
 
     .footer-grid {
@@ -537,9 +723,9 @@ background-color:#fff2e5;
 
 @media (max-width: 799px) {
     #header {
-        padding: 16px 24px;
+        padding: 14px 20px;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 10px;
     }
 
     .menu-toggle {
@@ -556,21 +742,21 @@ background-color:#fff2e5;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 12px;
+        gap: 10px;
         margin-top: 0;
-        padding: 0 18px;
+        padding: 0 14px;
         background: rgba(255, 255, 255, 0.98);
-        border-radius: 16px;
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+        border-radius: 14px;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
         transition: max-height 0.28s ease, opacity 0.28s ease, padding 0.28s ease, margin-top 0.28s ease;
     }
 
     #navbar.open {
-        max-height: 260px;
+        max-height: 200px;
         opacity: 1;
         pointer-events: auto;
         margin-top: 8px;
-        padding: 16px 18px;
+        padding: 10px 12px;
     }
 
     #navbar li {
@@ -625,17 +811,104 @@ background-color:#fff2e5;
     #sm-banner2 .banner-box2 {
         height: 40vh;
         padding: 20px;
-        min-width: 0;
+    }
+
+    #page-header {
+        height: 34vh;
+        padding: 0 24px;
+    }
+
+    #page-header h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    #page-header p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    #pagination .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    #pagination a {
+        padding: 10px 14px;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    #prodetails {
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image,
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+
+    #prodetails .single-pro-image {
+        margin-right: 0;
+    }
+
+    #prodetails .single-pro-details h4 {
+        padding: 20px 0 12px 0;
+    }
+
+    #prodetails .single-pro-details h2 {
+        font-size: 20px;
+    }
+
+    #prodetails .single-pro-details span {
+        line-height: 22px;
+        font-size: 14px;
+        margin: 8px 0 12px;
+    }
+
+    #prodetails .single-pro-details input {
+        width: 52px;
+        height: 42px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    #prodetails .single-pro-details button {
+        padding: 12px 22px;
+        font-size: 14px;
     }
 
     .site-footer {
-        padding-top: 44px;
-        padding-bottom: 36px;
+        padding-top: 36px;
+        padding-bottom: 28px;
     }
 
     .footer-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 18px;
+    }
+
+    .site-footer .logo {
+        width: 150px;
+        margin-bottom: 12px;
+    }
+
+    .site-footer h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .footer-brand p,
+    .footer-contact p,
+    .site-footer .col a {
+        font-size: 14px;
+    }
+
+    .follow .icon i {
+        width: 34px;
+        height: 34px;
     }
 }
 
@@ -702,6 +975,79 @@ background-color:#fff2e5;
         padding: 16px;
     }
 
+    #page-header {
+        height: 28vh;
+        padding: 0 18px;
+    }
+
+    #page-header h2 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    #page-header p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    #pagination a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    #prodetails {
+        gap: 18px;
+        margin-top: 10px;
+        padding-top: 0;
+    }
+
+    #prodetails .single-pro-details {
+        padding-top: 0;
+    }
+
+    #prodetails .single-pro-details h6 {
+        font-size: 12px;
+    }
+
+    #prodetails .single-pro-details h4 {
+        padding: 16px 0 10px 0;
+        font-size: 18px;
+    }
+
+    #prodetails .single-pro-details h2 {
+        font-size: 18px;
+    }
+
+    #prodetails .single-pro-details span {
+        line-height: 22px;
+        font-size: 14px;
+        margin: 8px 0 12px;
+    }
+
+    #prodetails .single-pro-details input {
+        width: 48px;
+        height: 40px;
+        margin-right: 8px;
+        margin-bottom: 12px;
+    }
+
+    #prodetails .single-pro-details button {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    #prodetails .single-pro-details input {
+        width: 48px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    #prodetails .single-pro-details button {
+        width: 100%;
+        margin-top: 8px;
+    }
+
     #sm-banner .banner-box h2,
     #sm-banner2 .banner-box2 h2 {
         font-size: 24px;
@@ -710,21 +1056,22 @@ background-color:#fff2e5;
 
     .site-footer {
         border-radius: 20px 20px 0 0;
-        padding-top: 36px;
+        padding-top: 30px;
+        padding-bottom: 22px;
     }
 
     .site-footer .logo {
-        width: 145px;
+        width: 130px;
     }
 
     .follow .icon i {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
     }
 
     .footer-bottom {
-        margin-top: 12px;
-        padding-top: 16px;
-        font-size: 13px;
+        margin-top: 10px;
+        padding-top: 14px;
+        font-size: 12px;
     }
 }
