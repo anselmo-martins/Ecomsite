@@ -849,6 +849,99 @@ table{
         gap: 10px;
     }
 
+    #cart {
+        overflow-x: visible;
+    }
+
+    #cart table,
+    #cart thead,
+    #cart tbody,
+    #cart tr,
+    #cart th,
+    #cart td {
+        display: block;
+        width: 100%;
+    }
+
+    #cart thead {
+        display: none;
+    }
+
+    #cart tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    #cart tbody tr {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 14px;
+        padding: 16px;
+        border: 1px solid #e2e9e1;
+        border-radius: 12px;
+        background: #fff;
+    }
+
+    #cart tbody tr td {
+        padding: 0;
+        border: none;
+        min-height: 28px;
+        white-space: normal;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #cart tbody tr td:first-child {
+        grid-column: 1 / -1;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    #cart tbody tr td:nth-child(2) {
+        justify-content: center;
+    }
+
+    #cart tbody tr td:nth-child(3)::before,
+    #cart tbody tr td:nth-child(4)::before,
+    #cart tbody tr td:nth-child(5)::before,
+    #cart tbody tr td:nth-child(6)::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #333;
+        margin-right: 8px;
+    }
+
+    #cart table td {
+        vertical-align: middle;
+    }
+
+    #cart table img {
+        width: 70px;
+    }
+
+    #cart-add {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #coupon,
+    #subtotal {
+        width: 100%;
+    }
+
+    #coupon input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #coupon div {
+        display: flex;
+        flex-direction: column;
+    }
+
     .menu-toggle {
         display: inline-flex;
         margin-left: auto;
@@ -1194,5 +1287,10 @@ table{
         margin-top: 10px;
         padding-top: 14px;
         font-size: 12px;
+    }
+
+    #cart h2{
+        font-size: 20px;
+        font-weight: 600;
     }
 }
