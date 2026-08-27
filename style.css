@@ -1262,6 +1262,19 @@ table{
         margin-top: 8px;
     }
 
+    #cart tbody tr {
+        grid-template-columns: 1fr;
+    }
+
+    #cart tbody tr td:nth-child(2) {
+        justify-content: flex-start;
+    }
+
+    #coupon button,
+    #subtotal button {
+        width: 100%;
+    }
+
     #sm-banner .banner-box h2,
     #sm-banner2 .banner-box2 h2 {
         font-size: 24px;
