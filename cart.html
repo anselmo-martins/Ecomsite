@@ -1,0 +1,156 @@
+<! DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ecommerce </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="resources/images/logSai-removebg-preview.png" class="logo" alt="Logo"></a>
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="navbar" aria-expanded="false" aria-label="Open navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="cart.html"><img src="resources/icons/cart.png" alt="Cart"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header">
+    </section>
+
+        <section id="cart" class="section-p1">
+        <h2>Your Shopping Cart</h2>
+                <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wireless Buds</td>
+                    <td><img src="resources/products/buds.png" alt="Product Image" width="100"></td>
+                    <td>N$230</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>N$230</td>
+                    <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+
+                <tr>
+                    <td>Headphones</td>
+                    <td><img src="resources/products/Headphones.png" alt="Product Image" width="100"></td>
+                    <td>N$6990</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>N$6990</td>
+                    <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+
+                <tr>
+                    <td>Mouse</td>
+                    <td><img src="resources/products/Mousepng.png" alt="Product Image" width="100"></td>
+                    <td>N$199</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>N$199</td>
+                    <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>            
+                <input type="text" placeholder="Enter Coupon Code">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>N$7419</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>N$0</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>N$7419</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer class="section-p1 site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img class="logo" src="resources/images/logSai-removebg-preview.png" alt="Logo" width="100" height="100">
+                <p>Quality tech, trusted brands, and smooth shopping in one place.</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col footer-contact">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong> 123 Main Street, Windhoek, Namibia</p>
+                <p><strong>Phone: </strong> +264 123 4567</p>
+                <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            </div>
+
+            <div class="col">
+                <h4>About Us</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">View Cart</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Manage Account</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Saisket Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
